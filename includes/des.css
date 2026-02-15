@@ -1,0 +1,26 @@
+.main {
+    display: flex;
+    justify-content: center;
+    padding-top: 4%;
+    
+}
+.box h2{
+    font-size:40px;
+   text-transform:uppercase;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: bold;
+}
+fieldset{
+    border-radius: 3px;
+    border-color: blue;
+    border-top:3px ;
+}
+.box{
+    border: 3px;
+    box-shadow: inset;
+    border-color: blue;
+}
+.box a{
+    margin-left: 6px;
+    padding: 15px;
+}

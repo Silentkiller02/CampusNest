@@ -1,0 +1,19 @@
+<?php
+// admin/create_admin.php
+include("../includes/db.php");
+
+// ---- CHANGE THESE ONCE, THEN DELETE THIS FILE ----
+$username   = "admin";
+$plain_pass = "Admin@123";
+$full_name  = "Super Admin";
+
+$hash = password_hash($plain_pass, PASSWORD_DEFAULT);
+
+$stmt = $conn->prepare("INSERT INTO admins (username, password, full_name, role) VALUES (?, ?, ?, 'super')");
+$stmt->bind_param("sss", $username, $hash, $full_name);
+
+if ($stmt->execute()) {
+  echo "Admin user created: <b>$username</b><br>Now delete this file: admin/create_admin.php";
+} else {
+  echo "Error: " . $stmt->error;
+}

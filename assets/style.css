@@ -1,0 +1,103 @@
+/* General Page */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 60%;
+    margin: 40px auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form */
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Labels */
+.edit-form label {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+/* Inputs, Textarea, Select */
+.edit-form input[type="text"],
+.edit-form input[type="email"],
+.edit-form input[type="file"],
+.edit-form textarea,
+.edit-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.3s ease-in-out;
+}
+
+/* Input Focus */
+.edit-form input:focus,
+.edit-form textarea:focus,
+.edit-form select:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+/* Image Preview */
+.preview {
+    display: block;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+/* Button */
+.btn {
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .preview {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
